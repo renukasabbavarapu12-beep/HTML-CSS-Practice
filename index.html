@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>HTML CSS Practice</title>
@@ -8,165 +7,309 @@
   <style>
 
     /* Q1 */
-    p.q1 {
+    .q1 p {
       color: blue;
       background-color: lightgrey;
     }
 
     /* Q2 */
+    #title {
+      color: green;
+    }
     .box {
       width: 200px;
       height: 100px;
       background-color: lightblue;
     }
 
-    #title {
-      color: green;
-      text-align: center;
-    }
-
     /* Q3 */
     .box3 {
-      width: 250px;
       padding: 20px;
-      border: 3px solid black;
-      margin: 15px;
+      border: 2px solid black;
+      margin: 20px;
     }
 
     /* Q4 */
     .box4 {
-      width: 250px;
+      width: 200px;
       padding: 20px;
-      border: 3px solid black;
-      margin: 15px;
+      border: 5px solid black;
       box-sizing: border-box;
     }
 
     /* Q5 */
-    h1 {
-      text-align: center;
-      font-weight: bold;
+    .q5 h1 {
       text-transform: uppercase;
+      text-align: center;
     }
 
     /* Q6 */
-    body {
-      font-family: Poppins, Roboto, Arial, sans-serif;
-      font-size: 16px;
+    .q6 p {
+      font-family: Arial;
+      font-size: 18px;
+      color: blue;
     }
 
     /* Q7 */
-    a {
+    .q7 a {
       text-decoration: none;
-      color: black;
     }
-
-    a:hover {
-      text-decoration: underline wavy red;
+    .q7 a:hover {
+      text-decoration: underline;
     }
 
     /* Q8 */
     .q8 p {
-      color: rgb(255, 0, 0);
-    }
-
-    .q8 h2 {
-      background-color: #000000;
-      color: white;
+      color: rgb(255,0,0);
     }
 
     /* Q9 */
-    .card {
-      padding: 10px 20px;
-      margin: 15px 30px;
-      border: 2px solid black;
+    .q9 p {
+      color: #0000FF;
     }
 
     /* Q10 */
-    .overflow-box {
+    .bg {
+      height: 300px;
+      background-image: url("https://picsum.photos/600/300");
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Q11 */
+    .inline span {
+      background-color: lightblue;
+    }
+
+    /* Q12 */
+    .block div {
       width: 200px;
+      height: 50px;
+      margin: 5px;
+    }
+
+    /* Q13 */
+    .inlineblock div {
+      display: inline-block;
+      width: 150px;
       height: 100px;
-      border: 2px solid black;
-      overflow: auto;
+      margin: 10px;
+      background: orange;
+    }
+
+    /* Q14 */
+    .hide1 {
+      display: none;
+    }
+    .hide2 {
+      visibility: hidden;
+    }
+
+    /* Q15 */
+    .rgba {
+      width: 200px;
+      height: 200px;
+      background: rgba(255,0,0,0.5);
+    }
+
+    /* Q16 */
+    .opacity div {
+      width: 100px;
+      height: 100px;
+      margin: 5px;
+      display: inline-block;
+      opacity: 0.5;
+    }
+
+    /* Q17 */
+    .parent {
+      width: 400px;
+      background: lightgrey;
+    }
+    .child {
+      width: 50%;
+      background: blue;
+      height: 50px;
+    }
+
+    /* Q18 */
+    .em {
+      font-size: 20px;
+      padding: 2em;
+      background: lightgreen;
+    }
+
+    /* Q19 */
+    html {
+      font-size: 16px;
+    }
+    .rem {
+      font-size: 2rem;
+    }
+
+    /* Q20 */
+    .bg2 {
+      height: 300px;
+      background: url("https://picsum.photos/500/300") no-repeat center;
+      background-size: cover;
     }
 
   </style>
-
 </head>
 
 <body>
 
-  <!-- Q1 -->
-  <h2>Q1: Change Text Color and Background</h2>
-  <p class="q1">This is paragraph 1</p>
-  <p class="q1">This is paragraph 2</p>
+<h1>HTML CSS Practice (Q1–Q20)</h1>
 
-  <hr>
+<hr>
 
-  <!-- Q2 -->
-  <h2 id="title">Q2: Class and ID Selectors</h2>
-  <div class="box"></div>
+<!-- Q1 -->
+<div class="q1">
+<h2>Q1</h2>
+<p>Paragraph 1</p>
+<p>Paragraph 2</p>
+</div>
 
-  <hr>
+<hr>
 
-  <!-- Q3 -->
-  <h2>Q3: Apply Box Model Properties</h2>
-  <div class="box3">
-    This is a box model example
-  </div>
+<!-- Q2 -->
+<h2 id="title">Q2</h2>
+<div class="box"></div>
 
-  <hr>
+<hr>
 
-  <!-- Q4 -->
-  <h2>Q4: Fix Box Size using box-sizing</h2>
-  <div class="box4">
-    This is box-sizing example
-  </div>
+<!-- Q3 -->
+<h2>Q3</h2>
+<div class="box3">Box model</div>
 
-  <hr>
+<hr>
 
-  <!-- Q5 -->
-  <h2>Q5: Text Formatting</h2>
-  <h1>This is a heading</h1>
+<!-- Q4 -->
+<h2>Q4</h2>
+<div class="box4">Box sizing</div>
 
-  <hr>
+<hr>
 
-  <!-- Q6 -->
-  <h2>Q6: Font Styling</h2>
-  <p>This is a sample paragraph to show font styling</p>
+<!-- Q5 -->
+<div class="q5">
+<h2>Q5</h2>
+<h1>This is heading</h1>
+</div>
 
-  <hr>
+<hr>
 
-  <!-- Q7 -->
-  <h2>Q7: Text Decoration</h2>
-  <a href="#">Hover over this link</a>
+<!-- Q6 -->
+<div class="q6">
+<h2>Q6</h2>
+<p>Font styling</p>
+</div>
 
-  <hr>
+<hr>
 
-  <!-- Q8 -->
-  <div class="q8">
-    <h2>Q8: RGB and HEX Colors</h2>
-    <p>This is a paragraph with RGB red color</p>
-  </div>
+<!-- Q7 -->
+<div class="q7">
+<h2>Q7</h2>
+<a href="#">Hover link</a>
+</div>
 
-  <hr>
+<hr>
 
-  <!-- Q9 -->
-  <h2>Q9: Padding & Margin Shorthand</h2>
-  <div class="card">
-    This is a card example
-  </div>
+<!-- Q8 -->
+<div class="q8">
+<h2>Q8</h2>
+<p>RGB color</p>
+</div>
 
-  <hr>
+<hr>
 
-  <!-- Q10 -->
-  <h2>Q10: Height, Width & Overflow</h2>
-  <div class="overflow-box">
-    This is a long content example. This is a long content example.
-    This is a long content example. This is a long content example.
-    This is a long content example. This is a long content example.
-  </div>
+<!-- Q9 -->
+<div class="q9">
+<h2>Q9</h2>
+<p>HEX color</p>
+</div>
+
+<hr>
+
+<!-- Q10 -->
+<h2>Q10</h2>
+<div class="bg"></div>
+
+<hr>
+
+<!-- Q11 -->
+<div class="inline">
+<h2>Q11</h2>
+<span>Box1</span>
+<span>Box2</span>
+</div>
+
+<hr>
+
+<!-- Q12 -->
+<div class="block">
+<h2>Q12</h2>
+<div style="background:red;"></div>
+<div style="background:blue;"></div>
+</div>
+
+<hr>
+
+<!-- Q13 -->
+<div class="inlineblock">
+<h2>Q13</h2>
+<div></div>
+<div></div>
+<div></div>
+</div>
+
+<hr>
+
+<!-- Q14 -->
+<h2>Q14</h2>
+<p class="hide1">Hidden</p>
+<p class="hide2">Invisible</p>
+
+<hr>
+
+<!-- Q15 -->
+<h2>Q15</h2>
+<div class="rgba"></div>
+
+<hr>
+
+<!-- Q16 -->
+<div class="opacity">
+<h2>Q16</h2>
+<div style="background:red;"></div>
+<div style="background:blue;"></div>
+<div style="background:green;"></div>
+</div>
+
+<hr>
+
+<!-- Q17 -->
+<h2>Q17</h2>
+<div class="parent">
+  <div class="child"></div>
+</div>
+
+<hr>
+
+<!-- Q18 -->
+<h2>Q18</h2>
+<div class="em">EM Example</div>
+
+<hr>
+
+<!-- Q19 -->
+<h2>Q19</h2>
+<p class="rem">REM Example</p>
+
+<hr>
+
+<!-- Q20 -->
+<h2>Q20</h2>
+<div class="bg2"></div>
 
 </body>
-
 </html>
